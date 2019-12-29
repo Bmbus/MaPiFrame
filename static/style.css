@@ -1,3 +1,4 @@
 button {
-    visibility: hidden;
+    background: transparent;
+    border: none !important;
 }
