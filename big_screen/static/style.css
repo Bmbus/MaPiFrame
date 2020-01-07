@@ -1,0 +1,94 @@
+button {
+    background: transparent;
+    border: none !important;
+    color: #121212;
+}
+
+html {
+    background-color: #121212;
+    overflow: hidden;
+}
+
+#gif {
+    position: relative;
+}
+
+#gif img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 200px;
+    width: 600px;
+    height: 600px;
+}
+
+#time{
+    position: relative;
+    float: right;
+    margin-top: 600px;
+    margin-right: 50px;
+}
+
+#time #ct {
+    font-family: 'Anton', sans-serif;
+    color: #EFEFEF;
+    font-size: 200px;
+    line-height: 0.5px;
+}
+
+
+#time, #dt {
+    clear: both;
+    font-family: 'Anton', sans-serif;
+    color: #EFEFEF;
+    font-size: 90px;
+    line-height: 1;
+}
+
+#icon {
+    float: left;
+}
+
+#location {
+    font-family: 'Anton', sans-serif;
+    color: #EFEFEF;
+    font-size: 25px;
+    line-height: 0;
+    margin-left: 20px;
+} 
+
+#temp {
+    font-family: 'Anton', sans-serif;
+    color:#EFEFEF;
+    font-size: 60px;
+    line-height: 10px;
+    margin-left: 20px;
+}
+
+#calendar {
+    margin-top: 800px;
+    float: left;
+}
+
+#period {
+    font-family: 'Anton', sans-serif;
+    color: #EFEFEF;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+#event {
+    font-family: 'Anton', sans-serif;
+    color: #EFEFEF;
+    font-size: 50px;
+    line-height: 0;
+}
+
+#c_img {
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+
+
