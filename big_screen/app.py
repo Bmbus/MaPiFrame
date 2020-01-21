@@ -1,8 +1,11 @@
 from flask import Flask, render_template
 from datetime import datetime
 from static.pyfiles import weather, calendar
-from config import location
+import json
 
+with open("../config.json") as fp:
+    file = json.load(fp)
+    location = file["city"]
 
 app = Flask(__name__)
 TIME = datetime.now().strftime("%A, %d.%m.%Y")

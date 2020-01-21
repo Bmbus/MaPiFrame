@@ -1,10 +1,13 @@
 import requests
-from config import location, country, ApiKey
+import json
 
-CITY = location
-LOCATION = country
+with open("../config.json") as fp:
+    file = json.load(fp)
+    APIKEY = file["ApiKey"]
+    CITY = file["city"]
+    LOCATION = file["country"]
+
 UNIT = "metric"
-APIKEY = ApiKey
 BASEURL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY},{LOCATION}&APPID={APIKEY}&units={UNIT}"
 
 

@@ -1,0 +1,30 @@
+button {
+    background: transparent;
+    border: none !important;
+    color: #121212;
+}
+
+#body{
+    overflow-x: scroll;
+}
+
+html {
+    background-color: #121212;
+}
+
+h1 {
+    color:white; 
+    text-align:center; 
+    font-size:50px;
+}
+
+
+}
+#time{
+    /*position:absolute;*/
+    /*height: 50px;*/
+    /*width: 50px;*/
+    /*left:50%;*/
+    /*top:50%;*/
+    margin: 0 auto;  /* todo: center the div !!!
+}
