@@ -4,6 +4,11 @@ button {
     color: #121212;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 #body{
     overflow-x: scroll;
 }
@@ -30,9 +35,22 @@ h3 {
 
 }
 #time{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
+.main-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
+#weather {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
 }
