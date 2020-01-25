@@ -40,5 +40,7 @@ def get_events():
         event_dt = datetime.datetime.strptime(start_raw.split("T")[0], "%Y-%m-%d") # error
         start = datetime.datetime.strptime(start_raw.split("T")[1].split("+")[0], "%H:%M:%S")
         end = datetime.datetime.strptime(end_raw.split("T")[1].split("+")[0], "%H:%M:%S")
-
-        return {"start": str(start).split()[1], "event": event["summary"], "end": str(end).split()[1], "event_dt": str(event_dt).split()[0]}
+        event_dt_split = str(event_dt).split()[0].replace("-", ".").split(".")
+        _event = f"{event_dt_split[2]}.{event_dt_split[1]}.{event_dt_split[0]}"
+        
+        return {"start": str(start).split()[1], "event": event["summary"], "end": str(end).split()[1], "event_dt": _event}
