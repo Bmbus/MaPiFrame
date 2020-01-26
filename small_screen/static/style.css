@@ -2,6 +2,7 @@ button {
     background: transparent;
     border: none !important;
     color: #121212;
+    font-size: 0;
 }
 
 a {
@@ -15,6 +16,7 @@ a {
 
 html {
     background-color: #121212;
+    font-family: 'Anton', sans-serif;
 }
 
 h1 {
@@ -32,6 +34,10 @@ h3 {
     line-height: 12px;
 }
 
+span {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
 
 }
 #time{
@@ -53,4 +59,18 @@ h3 {
     left: 50%;
     transform: translate(-50% , -50%);
     position: absolute;
+}
+
+#weather h4 {
+    line-height: 0;
+    font-size: 50px;
+}
+
+.main-content-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    background-image: url("/small_screen/static/img/animation2.gif");
+    background-repeat: repeat;
 }
