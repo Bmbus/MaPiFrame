@@ -3,6 +3,7 @@ button {
     border: none !important;
     color: #121212;
     font-size: 0;
+    margin-bottom: 0em;
 }
 
 a {
@@ -73,4 +74,20 @@ span {
     position: absolute;
     background-image: url("/small_screen/static/img/animation2.gif");
     background-repeat: repeat;
+}
+
+#back {
+   margin-top: 25%;
+    float: left;
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+#next {
+    float: right;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    margin-top: 25%;
 }
