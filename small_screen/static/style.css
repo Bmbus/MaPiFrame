@@ -55,6 +55,14 @@ span {
     position: absolute;
 }
 
+
+#main-content-animation {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
 #weather {
     top: 50%;
     left: 50%;
@@ -65,15 +73,6 @@ span {
 #weather h4 {
     line-height: 0;
     font-size: 50px;
-}
-
-.main-content-image {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    position: absolute;
-    background-image: url("/small_screen/static/img/animation2.gif");
-    background-repeat: repeat;
 }
 
 #back {
