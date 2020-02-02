@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from static.pyfiles import weather, calendar
+from static.pyfiles import weather, calendar, room_stuff
 import json
 
 CALANDER_EVENT_START = calendar.get_events()["start"][:5]
@@ -33,6 +33,10 @@ def weather_route():
 @app.route("/animation")
 def animation():
     return render_template("animation.html")
+
+@app.route("room")
+def room():
+    return render_template("room.html", hum=room_stuff.get_roomstuff()["hum"] ,temp=room_stuff.get_roomstuff()["temp"])
 
 
 if __name__ == "__main__":
